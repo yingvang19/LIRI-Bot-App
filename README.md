@@ -10,7 +10,7 @@ The LIRI Bot will produce search results based on the following commands lines i
 * node liri.js do-what-it-says
 
 
-## This command searches songs from the _Spotify requested API._
+### This command searches songs from the _Spotify requested API._
 https://developer.spotify.com/documentation/web-api/
 > *node liri.js spotify-this-song “song/track name”*
 
@@ -27,32 +27,29 @@ https://developer.spotify.com/documentation/web-api/
 1. Step Four: On the next screen, scroll down to where you see your client id and client secret. Copy the Spotify API key values down somewhere, you’ll need the Spotify API keys to pull data from the Spotify API database when you run the LIRI Bot App.
 1. As a security precaution, the Spotify Client ID & SECRET were stored on a local .env file and added to a local .gitignore file to avoid publishing the information.
 
-## This command searches movies from the _OMDB API database._
+### This command searches movies from the _OMDB API database._
 http://www.omdbapi.com/
 >	*node liri.js movie-this “movie title”*
 
-•	Title of the movie
-•	Year the movie came out
-•	IMDB Rating of the movie
-•	Rotten Tomatoes Rating of the movie
-•	Country where the movie was produced
-•	Language of the movie
-•	Plot of the movie
-•	Actors/Actress in the movie
+* Title of the movie
+* Year the movie came out
+* IMDB Rating of the movie
+* Rotten Tomatoes Rating of the movie
+* Country where the movie was produced
+*	Language of the movie
+* Plot of the movie
+* Actors/Actress in the movie
 
-## This command searches movies from the _Bands in Town Artist Events API._
+### This command searches movies from the _Bands in Town Artist Events API._
 https://app.swaggerhub.com/apis-docs/Bandsintown/PublicAPI/3.0.0
 > *node liri.js concert-this “artist/band name”*
 
-•	Artist
-•	Name of Venue
-•	Venue location
-•	Date of the event in MM/DD/YYYY format
+* Artist
+*	Name of Venue
+*	Venue location
+*	Date of the event in MM/DD/YYYY format
 
-
-
-
-## This command searches the song from the *random.txt* file from the _Spotify requested API._
+### This command searches the song from the *random.txt* file from the _Spotify requested API._
 https://developer.spotify.com/documentation/web-api/
 >	*node liri.js do-what-it-says*
 
