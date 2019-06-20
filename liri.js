@@ -111,7 +111,7 @@ var getBand= function(artistName) {
 
           console.log("Name of Venue: "+ response.data[0].venue.name);
           console.log("Venue Location: " + response.data[0].venue.city + ", " + response.data[0].venue.country);
-          console.log("Date of the Event (MM/DD/YYYY): " + moment(response.data[i].datetime).format("L"));
+          console.log("Date of the Event (MM/DD/YYYY): " + moment(response.data[0].datetime).format("L"));
           console.log("-----------------------------------------");
       // }
   });
