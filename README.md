@@ -10,9 +10,10 @@ The LIRI Bot will produce search results based on the following commands lines i
 * node liri.js do-what-it-says
 
 
-## This command searches songs from the _Spotify requested API._ https://developer.spotify.com/documentation/web-api/
-
+## This command searches songs from the _Spotify requested API._
+https://developer.spotify.com/documentation/web-api/
 > *node liri.js spotify-this-song “song/track name”*
+
 * Artist
 * Song
 * Spotify song preview url
@@ -41,7 +42,6 @@ http://www.omdbapi.com/
 
 ## This command searches movies from the _Bands in Town Artist Events API._
 https://app.swaggerhub.com/apis-docs/Bandsintown/PublicAPI/3.0.0
-
 > *node liri.js concert-this “artist/band name”*
 
 •	Artist
@@ -54,9 +54,9 @@ https://app.swaggerhub.com/apis-docs/Bandsintown/PublicAPI/3.0.0
 
 ## This command searches the song from the *random.txt* file from the _Spotify requested API._
 https://developer.spotify.com/documentation/web-api/
-
 >	*node liri.js do-what-it-says*
-Search and display the spotify result for the song “I want it that way”which is stored in the random.txt file.
+
+> Search and display the spotify result for the song “I want it that way”which is stored in the random.txt file.
 
 ## Deployed link to the app
 https://github.com/yingvang19/LIRI-Bot-App
