@@ -68,7 +68,7 @@ var getMovie = function(movie){
   if (typeof movie === typeof undefined) {
     movie = "Mr. Nobody";
   }
-  request('http://www.omdbapi.com/?t=' +movie+'&apikey=12340858', function (error, response, body) {
+  request('http://www.omdbapi.com/?t=' +movie+'&apikey=trilogy', function (error, response, body) {
 ; 
 
 if (!error && response.statusCode === 200) {
