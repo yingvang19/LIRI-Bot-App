@@ -13,7 +13,7 @@ var fs = require("fs");
 var getSpotify = function(song){
   var spotify = new Spotify(keys.spotify);
   if (typeof song === typeof undefined) {
-    song = "The Sign";
+    song = "The Sign Ace of Base";
 }
   spotify.search({ type: 'track', query: song }, function(err, data) {
     if (err) {
@@ -21,6 +21,7 @@ var getSpotify = function(song){
     } else{
   
     var song = data.tracks.items;
+    console.log("------------------------------------------");
     console.log("This is the artist: " ,song[0].album.artists[0].name );
     console.log("The song's name: " , song[0].name); 
     console.log("Preview link of the song: " , song[0].preview_url); 
@@ -75,7 +76,7 @@ if (!error && response.statusCode === 200) {
      var jsonData = JSON.parse(body);
     //  console.log(jsonData);   
    
-    
+    console.log("------------------------------------------");
      console.log('Title:', jsonData.Title);
      console.log('Year:', jsonData.Year);
      console.log('IMDB Rating:', jsonData.imdbRating);
@@ -84,7 +85,7 @@ if (!error && response.statusCode === 200) {
      console.log('Language:', jsonData.Language);
      console.log('Plot:', jsonData.Plot);
      console.log('Actors/Actress:', jsonData.Actors);
-     console.log('----------------------------------');
+     console.log("------------------------------------------");
 
 } else{
 
@@ -106,13 +107,13 @@ var getBand= function(artistName) {
   .then(function(response) {
      
           // console.log(response);
-          console.log("----------------");
+          console.log("------------------------------------------");
           console.log("Artist: ", artistName);
 
           console.log("Name of Venue: "+ response.data[0].venue.name);
           console.log("Venue Location: " + response.data[0].venue.city + ", " + response.data[0].venue.country);
           console.log("Date of the Event (MM/DD/YYYY): " + moment(response.data[0].datetime).format("L"));
-          console.log("-----------------------------------------");
+          console.log("------------------------------------------");
       
   });
 }
