@@ -109,12 +109,11 @@ var getBand= function(artistName) {
           // console.log(response);
           console.log("------------------------------------------");
           console.log("Artist: ", artistName);
-
           console.log("Name of Venue: "+ response.data[0].venue.name);
           console.log("Venue Location: " + response.data[0].venue.city + ", " + response.data[0].venue.country);
           console.log("Date of the Event (MM/DD/YYYY): " + moment(response.data[0].datetime).format("L"));
           console.log("------------------------------------------");
-      
+
   });
 }
 
